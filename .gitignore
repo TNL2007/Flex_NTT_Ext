@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+simulation/logs/build/
+simulation/logs/*.vcd
+fpga/reports/run/
+
