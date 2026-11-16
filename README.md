@@ -63,7 +63,7 @@ The RTL simulation demonstrates the specific injected product-register upset exe
 
 The included RTL, scripts, tests, and text reports were checked for the source path, host name, waiver username, and institutional/name patterns used in the audit. Vivado text-report headers had local host/path strings removed; required Xilinx/AMD copyright notices were retained. Machine-generated Vivado projects, run scripts, caches, compiled files, bitstreams, waveforms, original presentations/PDFs, and the incomplete ASIC flow were not included. Original Git history is not included. A license has not been selected; see `LICENSE_PENDING.md`.
 
-This is a local review package. It has not been pushed to GitHub or submitted to Anonymous GitHub. Public release remains subject to author/institution approval, redistribution-rights review, and a license choice.
+This artifact snapshot has been published to GitHub and is being prepared for anonymous peer review. The citation placeholder below must be replaced only after the anonymous mirror has been created and checked. A license has not been selected; public redistribution remains subject to the authors’ and institution’s rights.
 
 ## Citation placeholder
 
