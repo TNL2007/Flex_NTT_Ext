@@ -1,0 +1,7 @@
+VCD info: dumpfile mlkem_coe_mem_tb.vcd opened for output.
+write phase complete
+FULL MEMORY SWEEP PASS all 256 locations correct
+ISOLATION PASS addr=4 unaffected by write to addr=5
+ISOLATION PASS addr=5 correctly updated to 3000
+[ARTIFACT_ROOT]\testbench\memory\mlkem_coe_mem_tb.v:93: $finish called at 7740 (1s)
+

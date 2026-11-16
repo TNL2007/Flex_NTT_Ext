@@ -1,0 +1,3 @@
+PASS modmult tests correct
+[ARTIFACT_ROOT]\testbench\arithmetic\mlkem_modmult_tb.v:54: $finish called at 476006000 (1ps)
+

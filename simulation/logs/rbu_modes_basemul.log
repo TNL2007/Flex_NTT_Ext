@@ -1,0 +1,16 @@
+PHASE 1: corner / boundary cases
+  after phase 1: 31 checks, 0 errors
+PHASE 2: exhaustive 2-D slices (3rd/4th operand pinned)
+  after phase 2: 2217145 checks, 0 errors
+PHASE 3: exhaustive PWM (all 11082241 cases)
+  after phase 3: 13299386 checks, 0 errors
+PHASE 4: randomized sweep, all modes
+  after phase 4: 13419386 checks, 0 errors
+PHASE 5: real ML-KEM zeta values, randomized operands
+  after phase 5: 13440414 checks, 0 errors
+PHASE 6: protocol / handshake checks
+----------------------------------------
+PASS  13440425 checks, 0 mismatches
+----------------------------------------
+[ARTIFACT_ROOT]\testbench\rbu\mlkem_rbu_tb.v:419: $finish called at 561641920 (1s)
+

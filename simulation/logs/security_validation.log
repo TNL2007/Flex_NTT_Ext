@@ -1,0 +1,38 @@
+==================================================================
+   STARTING HARDWARE SECURITY & VERIFICATION TEST SUITE           
+==================================================================
+
+[TEST 1] Evaluating Constant-Time Execution...
+  -> Case A (All-Zero Vector): 2 clock cycles
+  -> Case B (Max Modulus Q-1): 2 clock cycles
+  -> Case C (Random Inputs)  : 2 clock cycles
+  [PASS] Timing Variance = 0.0 cycles across all input profiles (Immune to Timing Discrepancy).
+
+[TEST 2] Characterizing Register Toggle Switching Activity (DPA Model)...
+  -> Transition 1: prev_r0=1902, new_r0=1432 => Hamming Distance = 7 bits
+  -> Transition 2: prev_r0=1432, new_r0=2864 => Hamming Distance = 6 bits
+  -> Transition 3: prev_r0=2864, new_r0=967 => Hamming Distance = 8 bits
+  -> Transition 4: prev_r0=967, new_r0=2399 => Hamming Distance = 5 bits
+  -> Transition 5: prev_r0=2399, new_r0=502 => Hamming Distance = 5 bits
+  [NOTE] Non-zero data-dependent Hamming Distance confirms baseline unmasked register transitions.
+
+[TEST 3] Testing Dual-Layer Fault Protection Suite...
+  [3A PASS] Nominal Execution: No false alarms (fault_detected = 0, invariant holds).
+
+  [3B TEST] Simulating F-01 Shared Multiplier Product Glitch...
+    -> Injected single-bit upset into shared multiplier product reg (prod_reg ^ 0x4)
+  [3B PASS] SUCCESS: Layer 1 Modulo-7 Residue Checker caught multiplier product fault!
+            Overcomes F-01 algebraic cancellation blind spot (Alarm = 1, write blocked).
+
+  [3C TEST] Testing Layer 2 Cooley-Tukey Invariant on Adder/Subtractor SEU...
+  [3C PASS] SUCCESS: Layer 2 Invariant flags single-bit adder/sub datapath corruption!
+
+  [3D TEST] Testing Gentleman-Sande (INTT) Invariant Protection...
+  [3D PASS] SUCCESS: GS Mode correctly verified by dedicated Gentleman-Sande invariant!
+
+==================================================================
+   SECURITY VALIDATION SUITE: ALL AUDIT GATES (F-01 TO F-04) PASS! 
+   DUAL-LAYER ARCHITECTURE FULLY IMMUNE TO SHARED-PRODUCT BLIND SPOT
+==================================================================
+[ARTIFACT_ROOT]\testbench\security\tb_security_validation.v:257: $finish called at 1020000 (1ps)
+

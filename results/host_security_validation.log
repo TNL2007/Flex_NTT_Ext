@@ -1,0 +1,15 @@
+==============================================================================
+  IEEE HOST EVALUATION: QUANTITATIVE FAULT INJECTION & SECURITY METRICS
+==============================================================================
+
+[CAMPAIGN SUMMARY] Total Faults Injected: 10,000
+Overall Fault Detection Rate: 97.4200%
+
+Fault Injection Category            | Trials   | Detected | Coverage   | Latency 
+------------------------------------------------------------------------------
+Single-bit SEU (Datapath)           | 2000     | 2000     |   100.00% | 1 cycle
+Two-bit Independent Upsets          | 2000     | 2000     |   100.00% | 1 cycle
+Random Multi-bit Burst (3-6 bits)   | 2000     | 2000     |   100.00% | 1 cycle
+Complete Byte / Random Noise        | 2000     | 2000     |   100.00% | 1 cycle
+Twiddle Factor Memory Glitch        | 2000     | 1742     |    87.10% | 1 cycle
+------------------------------------------------------------------------------

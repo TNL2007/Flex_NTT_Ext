@@ -1,0 +1,10 @@
+VCD info: dumpfile mlkem_tf_mem_tb.vcd opened for output.
+t=10 addr=0 sel_gamma=0 data=1 expected=1
+t=20 addr=1 sel_gamma=0 data=1729 expected=1729
+t=30 addr=127 sel_gamma=0 data=2154 expected=2154
+t=40 addr=0 sel_gamma=1 data=17 expected=17
+t=50 addr=1 sel_gamma=1 data=3312 expected=3312
+t=60 addr=127 sel_gamma=1 data=1175 expected=1175
+FULL ROM SWEEP PASS all 256 entries correct
+[ARTIFACT_ROOT]\testbench\memory\mlkem_tf_mem_tb.v:326: $finish called at 316 (1s)
+
